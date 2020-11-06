@@ -36,4 +36,16 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void bigNumber(){
+        int result = this.roman.convert("DCCLXXXIX");
+        Assertions.assertEquals(789, result);
+    }
+
+    @Test
+    public void biggerNumber(){
+        int result = this.roman.convert("MMXIV");
+        Assertions.assertEquals(2014, result);
+    }
 }

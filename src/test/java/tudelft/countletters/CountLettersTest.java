@@ -17,4 +17,9 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void matichingWithRLetter() {
+        int words = new CountLetters().count("cats|door");
+        Assertions.assertEquals(2, words);
+    }
 }
